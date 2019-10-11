@@ -15,7 +15,7 @@ a:hover {
 .top-bar {
     position: relative;
     float: right;
-    margin-top: -6px;
+    margin: 2px 20px 0 0;
     display: flex;
     flex-flow: row || nowrap;
     //**
@@ -28,17 +28,22 @@ a:hover {
     text-align: right;
     word-spacing: 10px;
     padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 10px;
 }
 
 .gmail, .images, .apps {
     padding: 9px;
-    
 }
 
 .top-bar a {
     color: rgba(0,0,0,0.87);
+}
+
+.apps {
+    opacity: 0.5;
+}
+
+.apps:hover {
+    opacity: 1;
 }
 
 .content {
@@ -51,7 +56,7 @@ a:hover {
     height: 92px;
     width: 272px;
     padding-top: 109px; 
-    margin-top: 33px;
+    margin-top: 35px;
     margin-bottom: 20px;
 }
 
@@ -104,6 +109,24 @@ input[type="submit"]:hover {
     color: #222;
 }
 
+.languages {
+    position: relative;
+    text-align: center;
+    margin-top: 12px;
+}
+
+.language-item {
+    word-spacing: 6px;
+}
+
+.language-item a {
+    color: #1a0dab;
+}
+
+.language-item a:visited {
+    color: #609;
+}
+
 .pre-footer {
     position: absolute;
     display: block;
@@ -123,11 +146,11 @@ input[type="submit"]:hover {
 footer {
     position: absolute;
     clear:both;
+    display: inline;
     margin-left: -7px;
     width: 98%;
     bottom: 0;
     padding-left: 27px;
-    clear: both;
     background-color: #f2f2f2;
     color: #222;
     height: auto;
